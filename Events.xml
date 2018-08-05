@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.0" type="plugin" group="api" method="upgrade">
+    <name>Events API</name>
+	<creationDate>Luglio 2018</creationDate>
+	<author>Massimo Lombardi</author>
+	<authorEmail>lomba91@gmail.com</authorEmail>
+	<authorUrl>http://www.massimolombardi.eu</authorUrl>
+	<copyright>Copyright © 2018 - All rights reserved.</copyright>
+	<license>GNU General Public License v3.0</license>
+	<version>1.0</version>
+	<description>
+			Plugin integrativo per l'aggiunta di REST API utili per recuperare gli eventi in calendario.&#13;&#10;
+			Api disponibili:&#13;&#10;
+			all/{id} - Restituisce tutti gli eventi dall'id fornito in poi&#13;&#10;;
+			latest - Restituisce tutti gli eventi attivi&#13;&#10;
+			category/{category_name} - Restituisce tutti gli eventi di una specifica categoria&#13;&#10;
+			categoryList - Restituisce informazioni sulle categorie disponibili&#13;&#10;&#13;&#10;
+			Le chiamate sono del tipo:&#13;&#10;
+			/api/Events/{Risorsa}/{Parametro}
+	</description>
+    <files>
+        <filename plugin="Events">Events.php</filename>
+        <folder>resource</folder>
+    </files>
+</extension> 
